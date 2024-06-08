@@ -8,11 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     Button iniciarButton;
     SharedPreferences sharedPreferences;
 
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -28,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
         usuarioEditText = findViewById(R.id.usuario);
         passwordEditText = findViewById(R.id.password);
         iniciarButton = findViewById(R.id.iniciar);
+
+        // Inicializar SharedPreferences
+        sharedPreferences = getSharedPreferences("UserPrefs", MODE_PRIVATE);
 
         iniciarButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,14 +40,14 @@ public class MainActivity extends AppCompatActivity {
                     editor.putString("usuario", user);
                     editor.apply();
 
-                    String mensajePersonalizado = "Bienvenido estimado " + user + "que disfrute el planetario";
+                    String mensajePersonalizado = "Bienvenido estimado " + user + ", que disfrute el planetario";
                     Toast.makeText(MainActivity.this, mensajePersonalizado, Toast.LENGTH_SHORT).show();
 
-                    Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                    Intent intent = new Intent(MainActivity.this, Lista_planetas.class);
                     intent.putExtra("usuario", user);
                     startActivity(intent);
                 } else {
-                        Toast.makeText(MainActivity.this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show();
                 }
             }
         });

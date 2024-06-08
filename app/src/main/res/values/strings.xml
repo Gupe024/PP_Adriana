@@ -5,4 +5,45 @@
     <string name="Password">Contraseña</string>
     <string name="Iniciar">INICIAR</string>
     <string name="Menu">LISTA DE PLANETAS</string>
+    <string name="Nombre_planeta" />
+    <string name="Descripcion" />
+    <string name="TituloInfo"/>
+    <string name="Textoizquierdo"/>
+    <string name="Textocentrado"/>
+
+    <string-array name="planetas_array">
+        <item>Mercurio</item>
+        <item>Venus</item>
+        <item>Tierra</item>
+        <item>Marte</item>
+        <item>Jupiter</item>
+        <item>Saturno</item>
+        <item>Urano</item>
+        <item>Neptuno</item>
+    </string-array>
+
+    <string-array name="descripcionPlanetas">
+        <item>Mercurio es el planeta más pequeño del sistema solar.</item>
+        <item>Venus es el segundo planeta del sistema solar.</item>
+        <item>La tierra es el tercer planeta desde el Sol.</item>
+        <item>Marte es el cuarto planeta del sistema solar.</item>
+        <item>Jupiter es el quinto planeta del sistema solar.</item>
+        <item>Saturno es el sexto planeta del sistema solar.</item>
+        <item>Urano es el séptimo planeta del sistema solar.</item>
+        <item>Neptuno es el octavo y último planeta del sistema solar.</item>
+    </string-array>
+
+    <array name="imagenesPlanetas">
+        <item>@drawable/mercurio</item>
+        <item>@drawable/venus</item>
+        <item>@drawable/tierra</item>
+        <item>@drawable/marte</item>
+        <item>@drawable/jupiter</item>
+        <item>@drawable/saturno</item>
+        <item>@drawable/urano</item>
+        <item>@drawable/neptuno</item>
+    </array>
+
+
+
 </resources>
