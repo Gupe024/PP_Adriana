@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Menu"
-        android:textSize="18sp"
+        style="@style/TextoMenu"
         android:layout_margin="35dp"
         android:layout_centerHorizontal="true"/>
 

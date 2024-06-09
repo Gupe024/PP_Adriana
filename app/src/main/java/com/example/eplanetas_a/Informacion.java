@@ -3,18 +3,8 @@ package com.example.eplanetas_a;
 import android.content.Intent;
 import android.content.res.TypedArray;
 import android.os.Bundle;
-import android.widget.ImageView;
-import android.widget.TextView;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
-import java.text.BreakIterator;
-
-import android.content.Intent;
-import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -54,5 +44,25 @@ public class Informacion extends AppCompatActivity {
                 imagen2.recycle();
             }
         }
+
+        Button btnLogin = findViewById(R.id.btnLogin);
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Abrir la actividad de login
+                Intent intent = new Intent(Informacion.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btnRegresar = findViewById(R.id.btnRegresar);
+        btnRegresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Regresar a la ventana anterior
+                finish(); // Cierra esta actividad y regresa a la anterior
+            }
+        });
     }
 }
+

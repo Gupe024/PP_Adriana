@@ -5,6 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -14,9 +16,9 @@
         android:orientation="vertical">
 
         <TextView
-            android:layout_width="160dp"
+            android:layout_width="180dp"
             android:layout_height="45dp"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="40dp"
             android:text="@string/Titulo"
             style="@style/TituloStyle" />
 

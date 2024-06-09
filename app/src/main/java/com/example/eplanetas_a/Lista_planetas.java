@@ -35,7 +35,6 @@ public class Lista_planetas extends AppCompatActivity {
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                // Iniciar la actividad Informacion y pasar la posición del planeta seleccionado
                 Intent intent = new Intent(Lista_planetas.this, Informacion.class);
                 intent.putExtra("position", position);
                 startActivity(intent);

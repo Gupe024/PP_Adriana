@@ -6,93 +6,97 @@
     android:layout_height="match_parent"
     tools:context=".Informacion">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_horizontal">
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/Tituloinfo"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/TituloInfo"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:layout_marginRight="16dp"/>
-        </LinearLayout>
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/Tituloinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/TituloInfo"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="16dp" />
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/texto_izquierdo"
-                android:layout_width="0dp"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/Textoizquierdo"
-                android:textSize="16sp"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp" />
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/texto_izquierdo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Textoizquierdo"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp" />
+
+                <ImageView
+                    android:id="@+id/imagen1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_launcher_background"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp" />
+            </LinearLayout>
 
             <ImageView
-                android:id="@+id/imagen1"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:id="@+id/imagen2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:src="@drawable/ic_launcher_background"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true" />
+
+            <TextView
+                android:id="@+id/texto_centrado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp" />
-        </LinearLayout>
+                android:layout_marginEnd="16dp"
+                android:text="@string/Textocentrado"
+                android:textSize="16sp"/>
 
-        <ImageView
-            android:id="@+id/imagen2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_launcher_background"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="8dp"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true" />
-
-        <TextView
-            android:id="@+id/texto_centrado"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:text="@string/Textocentrado"
-            android:textSize="16sp"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_below="@id/texto_centrado"
-            android:layout_marginTop="10dp"
-            android:gravity="center">
-
-            <Button
-                android:id="@+id/btnLogin"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Login"
-                android:layout_marginEnd="16dp" />
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/btnRegresar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Regresar" />
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/Inicio_sesion" />
 
+                <Button
+                    android:id="@+id/btnRegresar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/volver" />
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-
+    </ScrollView>
 </RelativeLayout>
+

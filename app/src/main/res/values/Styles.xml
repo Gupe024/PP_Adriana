@@ -1,3 +1,41 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="Tema" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@drawable/fondo_pantalla</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#9C27B0</item>
+        <item name="android:buttonStyle">@style/ButtonStyle</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">#5426A6</item>
+    </style>
+
+    <style name="TituloStyle">
+        <item name="android:textSize">40dp</item>
+        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="UsuarioEditTextStyle">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:inputType">text</item>
+        <item name="android:hint">@string/usuario</item>
+    </style>
+
+    <style name="PasswordEditTextStyle">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:hint">@string/password</item>
+        <item name="android:inputType">textPassword</item>
+    </style>
+
+    <style name="TextoMenu">
+        <item name="android:textSize">25sp</item>
+        <item name="android:fontFamily">sans-serif-smallcaps</item>
+    </style>
 </resources>

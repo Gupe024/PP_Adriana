@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:text="@string/Menu"
         style="@style/TextoMenu"
-        android:layout_margin="35dp"
+        android:layout_margin="30dp"
         android:layout_centerHorizontal="true"/>
 
     <ListView

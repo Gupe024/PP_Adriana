@@ -10,6 +10,9 @@
     <string name="TituloInfo"/>
     <string name="Textoizquierdo"/>
     <string name="Textocentrado"/>
+    <string name="Inicio_sesion">LOGIN</string>
+    <string name="volver">REGRESAR</string>
+    <string name="password">Contraseña</string>
 
     <string-array name="planetas_array">
         <item>Mercurio</item>
@@ -79,7 +82,7 @@
 
     <string-array name="info_2">
         <item>A pesar de su proximidad con el Sol, no es el planeta más caliente, debido a que carece prácticamente de atmósfera</item>
-        <item>Su atmósfera,en cambio, es muy distinta a la de la Tierra ya que es el planeta más calietne del sistema solar.</item>
+        <item>Su atmósfera,en cambio, es muy distinta a la de la Tierra ya que es el planeta más caliente del sistema solar.</item>
         <item>Es el planeta rocoso más grande del sistema solar. La tierra posee un satélite, la Luna, que ejerce una gran influencia sobre las mareas y las estaciones.</item>
         <item>Sus días duran 25 horas, y tarda 1,88 años en darle la vuelta al sol. La gravedad en Marte es 62% menor que en la tierra. Posee dos lunas irregulares: Fobos y Deimos.</item>
         <item>Júpiter tiene 79 lunas, aunque podría poseer más. Entre ellas, están las cuatro lunas galileanas, muy distintas entre sí, y con características que atraen mucho a la comunidad científica</item>

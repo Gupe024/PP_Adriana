@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
         passwordEditText = findViewById(R.id.password);
         iniciarButton = findViewById(R.id.iniciar);
 
-        // Inicializar SharedPreferences
         sharedPreferences = getSharedPreferences("UserPrefs", MODE_PRIVATE);
 
         iniciarButton.setOnClickListener(new View.OnClickListener() {
@@ -40,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                     editor.putString("usuario", user);
                     editor.apply();
 
-                    String mensajePersonalizado = "Bienvenido estimado " + user + ", que disfrute el planetario";
+                    String mensajePersonalizado = "Bienvenid@ estimad@ " + user + ", que disfrute el planetario";
                     Toast.makeText(MainActivity.this, mensajePersonalizado, Toast.LENGTH_SHORT).show();
 
                     Intent intent = new Intent(MainActivity.this, Lista_planetas.class);
