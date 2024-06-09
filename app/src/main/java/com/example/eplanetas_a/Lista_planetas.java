@@ -1,11 +1,11 @@
 package com.example.eplanetas_a;
 
+import android.content.Intent;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -35,8 +35,12 @@ public class Lista_planetas extends AppCompatActivity {
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getApplicationContext(), "Seleccionaste: " + nombres[position], Toast.LENGTH_LONG).show();
+                // Iniciar la actividad Informacion y pasar la posición del planeta seleccionado
+                Intent intent = new Intent(Lista_planetas.this, Informacion.class);
+                intent.putExtra("position", position);
+                startActivity(intent);
             }
         });
     }
 }
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="Tituloinfo" type="id" />
+    <item name="texto_izquierdo" type="id" />
+    <item name="imagen1" type="id" />
+    <item name="imagen2" type="id" />
+    <item name="texto_centrado" type="id" />
+    <item name="btnLogin" type="id" />
+    <item name="btnRegresar" type="id" />
+</resources>

@@ -44,6 +44,59 @@
         <item>@drawable/neptuno</item>
     </array>
 
+    <string-array name="Titulo_planeta">
+        <item>PLANETA MERCURIO</item>
+        <item>PLANETA VENUS</item>
+        <item>PLANETA TIERRA</item>
+        <item>PLANETA MARTE</item>
+        <item>PLANETA JUPITER</item>
+        <item>PLANETA SATURNO</item>
+        <item>PLANETA URANO</item>
+        <item>PLANETA NEPTUNO</item>
+    </string-array>
 
+    <string-array name="Info_1">
+        <item>Es el planeta más cercano al Sol y tiene un tamaño un poco mayor a la Luna de la Tierra, lo que lo hace el más pequeño de los 8 planetas. No posee satélites.</item>
+        <item>Tiene un tamaño muy similar al del planeta Tierra también es un planeta rocoso con un núcleo de hierro y roca caliente</item>
+        <item>Es el tercer planeta más cercano al sol. Es una esfera achatada en los polos; por lo tanto su diámetro ecuatorial es 43 km más amplio que su diámetro polar. </item>
+        <item>Es el segundo planeta más pequeño del sistema solar, después de Mercurio. Se le conoce como el «Planeta Rojo» debido a su apariencia rojiza. Esto se debe a la abundancia de óxido de hierro en su superficie.</item>
+        <item>Jupiter es 11 veces más grnde que la Tierra. No se tratáde un planeta rocoso, sino que está constituido principalmente por gases y fluidos como hidrógeno y helio.</item>
+        <item>Saturno es también un planeta gaseoso, como Júpiter. Es el segundo más grande del sistema solar. Posee anillos muy vistosos que están compuestos principalmente de hielo y roca. Es el único planeta del sistema con esta característica.</item>
+        <item>Urano está compuesto principalmente por hielo de agua, amoníaco y metano. En su atmósfera hay, sobre todo, hidrógeno y helio, además de pequeñas cantidades de metano. </item>
+        <item>Neptuno es el planeta más alejado del Sol. Tarda 165 años terrestres en completar su larguísima órbita. </item>
+    </string-array>
+
+    <array name="imagene_1">
+        <item>@drawable/mercurio1</item>
+        <item>@drawable/venus1</item>
+        <item>@drawable/tierra1</item>
+        <item>@drawable/marte1</item>
+        <item>@drawable/jupiter1</item>
+        <item>@drawable/saturno1</item>
+        <item>@drawable/urano1</item>
+        <item>@drawable/neptuno1</item>
+    </array>
+
+    <string-array name="info_2">
+        <item>A pesar de su proximidad con el Sol, no es el planeta más caliente, debido a que carece prácticamente de atmósfera</item>
+        <item>Su atmósfera,en cambio, es muy distinta a la de la Tierra ya que es el planeta más calietne del sistema solar.</item>
+        <item>Es el planeta rocoso más grande del sistema solar. La tierra posee un satélite, la Luna, que ejerce una gran influencia sobre las mareas y las estaciones.</item>
+        <item>Sus días duran 25 horas, y tarda 1,88 años en darle la vuelta al sol. La gravedad en Marte es 62% menor que en la tierra. Posee dos lunas irregulares: Fobos y Deimos.</item>
+        <item>Júpiter tiene 79 lunas, aunque podría poseer más. Entre ellas, están las cuatro lunas galileanas, muy distintas entre sí, y con características que atraen mucho a la comunidad científica</item>
+        <item>En Saturno hay más de 80 lunas conocidas orbitando a su alrededor, incluyendo Encélado, que tiene géiseres que emiten agua y otros materiales, y la luna más grande del sistema solar, Titán. Saturno tarda 29,46 años terrestres en dar la vuelta alrededor del Sol.</item>
+        <item>Sus polos están orientados hacia el Sol en lugar de su ecuador, lo que da lugar a estaciones extremas y una compleja dinámica atmosférica.</item>
+        <item>Neptuno tiene un sistema de anillos débiles, al igual que Urano. El día en Neptuno dura 16 horas. Posee 14 lunas conocidas.</item>
+    </string-array>
+
+    <array name="imagen2">
+        <item>@drawable/mercurio2</item>
+        <item>@drawable/venus2</item>
+        <item>@drawable/tierra2</item>
+        <item>@drawable/marte2</item>
+        <item>@drawable/jupiter2</item>
+        <item>@drawable/saturno2</item>
+        <item>@drawable/urano2</item>
+        <item>@drawable/neptuno2</item>
+    </array>
 
 </resources>

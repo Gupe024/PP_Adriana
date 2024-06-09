@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -19,7 +18,7 @@
             android:gravity="center_horizontal">
 
             <TextView
-                android:id="@+id/TituloInfo"
+                android:id="@+id/Tituloinfo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/TituloInfo"
@@ -39,29 +38,61 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/Textoizquierdo"
-                android:textSize="16sp"/>
+                android:textSize="16sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp" />
 
             <ImageView
-                android:id="@+id/imageViewRight"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/imagen1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:src="@drawable/ic_launcher_background"
-                android:layout_marginLeft="16dp"/>
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp" />
         </LinearLayout>
 
         <ImageView
-            android:id="@+id/imagencentrada"
+            android:id="@+id/imagen2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_launcher_background"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true" />
 
         <TextView
             android:id="@+id/texto_centrado"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
             android:text="@string/Textocentrado"
             android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/texto_centrado"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:layout_marginEnd="16dp" />
+
+            <Button
+                android:id="@+id/btnRegresar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Regresar" />
+
+        </LinearLayout>
     </LinearLayout>
 
 </RelativeLayout>
