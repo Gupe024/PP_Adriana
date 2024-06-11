@@ -19,23 +19,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:gravity="center_horizontal">
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp">
 
                 <TextView
                     android:id="@+id/Tituloinfo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/TituloInfo"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:layout_marginRight="16dp" />
+                    android:layout_marginRight="16dp"
+                    style="@style/TituloStyle"/>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="5dp">
+                android:layout_marginTop="20dp">
 
                 <TextView
                     android:id="@+id/texto_izquierdo"
@@ -43,9 +43,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/Textoizquierdo"
-                    android:textSize="16sp"
                     android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp" />
+                    style="@style/TextoIzquierdoStyle"/>
 
                 <ImageView
                     android:id="@+id/imagen1"
@@ -53,7 +52,9 @@
                     android:layout_height="150dp"
                     android:src="@drawable/ic_launcher_background"
                     android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp" />
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"/>
             </LinearLayout>
 
             <ImageView
@@ -61,27 +62,51 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_launcher_background"
-                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="8dp"
-                android:scaleType="fitCenter"
-                android:adjustViewBounds="true"
-                android:padding="16dp"/>
+                android:padding="20dp" />
 
             <TextView
                 android:id="@+id/texto_centrado"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
                 android:text="@string/Textocentrado"
-                android:textSize="16sp"/>
+                style="@style/TextoCentradoStyle"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:padding="5dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/imagen3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_launcher_background"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="16dp"/>
+
+                <TextView
+                    android:id="@+id/texto_izquierdo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Textoizquierdo"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:gravity="center_horizontal"
+                    android:padding="16dp"
+                    style="@style/TextoIzquierdo2Style"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:gravity="center_horizontal"
                 android:orientation="horizontal">
 
@@ -101,4 +126,3 @@
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
-

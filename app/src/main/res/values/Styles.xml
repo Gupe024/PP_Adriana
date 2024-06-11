@@ -25,17 +25,31 @@
         <item name="android:textColor">@android:color/white</item>
         <item name="android:inputType">text</item>
         <item name="android:hint">@string/usuario</item>
+        <item name="android:textColorHint">#FFFCFC</item>
     </style>
 
     <style name="PasswordEditTextStyle">
         <item name="android:textSize">20dp</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:hint">@string/password</item>
+        <item name="android:textColorHint">#FFFCFC</item>
         <item name="android:inputType">textPassword</item>
     </style>
 
     <style name="TextoMenu">
         <item name="android:textSize">25sp</item>
         <item name="android:fontFamily">sans-serif-smallcaps</item>
+    </style>
+
+    <style name="TextoIzquierdoStyle">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextoCentradoStyle">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextoIzquierdo2Style">
+        <item name="android:textSize">16sp</item>
     </style>
 </resources>
